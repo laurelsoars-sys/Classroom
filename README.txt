@@ -1,9 +1,7 @@
-Classroom v5.2 — Adds D2L Brightspace PDF grade import, category weight review, and optional equal assignment weighting.
+Classroom v6.0 — smart dashboard, task priorities, time estimates, progress and study sessions.
 
-Back up your grades before upgrading. Upload all files and the icons folder to the ROOT of your GitHub Pages repository; replace index.html, sw.js, and other existing files.
+IMPORTANT: Export a JSON backup before upgrading. Upload the CONTENTS of this folder to GitHub root (index.html at root).
+The local data key, Skyward/D2L import and optional Supabase schema are unchanged.
+For reliable cache refresh, replace sw.js as well. Do not upload backups or grade PDFs to public GitHub.
 
-Import D2L: Classes & grades → choose class → D2L PDF import → choose a text-based PDF saved from D2L Grades → Read PDF → review grades and category weights → Save.
-
-PDF import uses PDF.js in the browser and may need internet when first opened. The PDF is processed on your device; no document is uploaded to an AI service. Scanned PDFs are not supported.
-
-Cloud sync requires your existing Supabase setup. Export periodic backups.
+Tasks created in earlier versions are treated as medium priority, 30 minutes, not started until edited. Completion stats start tracking from this update.
