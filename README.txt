@@ -1,3 +1,5 @@
+Classroom v5.1: Cloud setup uses a two-field form instead of consecutive browser prompts (which can be unreliable on iPhone). Your saved grades remain unchanged.
+
 Classroom v5 — private optional Supabase cloud sync
 
 Upload index.html, sw.js, manifest.webmanifest and icons/ to the root of your GitHub Pages repository.
