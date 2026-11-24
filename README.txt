@@ -1,8 +1,7 @@
-Classroom v4
+Classroom v5 — private optional Supabase cloud sync
 
-Open index.html on a computer for a local copy.
-For a home-screen install and offline use, upload ALL files and the icons folder to an HTTPS web host (for example GitHub Pages), then visit the hosted URL on Safari/Chrome and choose Add to Home Screen / Install.
+Upload index.html, sw.js, manifest.webmanifest and icons/ to the root of your GitHub Pages repository.
 
-IMPORTANT: Grades remain in local browser storage. Export a JSON backup before switching file versions or devices, then restore the backup in the new copy.
+Before upgrading, export a JSON backup from version 4. Cloud sync requires creating your own Supabase project and running SETUP-SUPABASE.sql in its SQL Editor. After you publish this version, open Settings & backup > Set up cloud sync and enter the Project URL + publishable key (NEVER a secret/service_role key). Configure Supabase Auth > URL Configuration with your published GitHub Pages URL as Site URL and redirect allow list. Use the same email on all your devices; choose “Connect this device” and carefully read prompts. Do not put grades or backup JSON in public GitHub.
 
-Reminders are in-app only; no background phone notifications or cloud sync. Screenshot OCR loads a library from the internet and may need connectivity.
+Local data is always saved. Cloud sync uses email magic links and row-level security. The setup is optional. Conflict detection stops overwrites when two devices have changed the data. Keep periodic backups.
