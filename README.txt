@@ -12,3 +12,5 @@ CONFIGURATION REQUIRED:
 The Supabase publishable API key in index.html is not a secret. Never add service_role or secret keys to the repository.
 
 Existing grades: export backup in v6 before upgrading. Old legacy grades are offered for import on first sign-in in a browser; other users get separate local storage.
+
+Classroom 6.2: expanded class colors (28 presets and a custom color picker).
